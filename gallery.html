@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Elite Motors</title>
+    <title>Gallery | Just Jap Imports</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
@@ -28,14 +28,22 @@
     <header class="page-header">
         <div class="container">
             <h1>Our Gallery</h1>
-            <p>Browse our handpicked collection of luxury, performance, and adventure vehicles.</p>
+            <p>Browse our handpicked collection of luxury, performance, and Classic Vehicles.</p>
         </div>
     </header>
 
     <main class="gallery-page">
         <div class="container gallery-grid">
             <div class="gallery-card car-card">
-                <div class="car-image sports"></div>
+                <div class="car-image sports velocity-sports" aria-label="Velocity Sports image gallery">
+                    <img src="images/celicagtb.jpg" alt="Toyota Celica GT" class="rotation-image active">
+                    <img src="images/celicagtb2.jpg" alt="Toyota Celica GT" class="rotation-image">
+                    <img src="images/celicagtb3.jpg" alt="Toyota Celica GT" class="rotation-image">
+                    <img src="images/celicagtb4.jpg" alt="Toyota Celica GT" class="rotation-image">
+                    <img src="images/celicagtb5.jpg" alt="Toyota Celica GT" class="rotation-image">
+                    <button type="button" class="rotation-control rotation-prev" aria-label="Show previous Velocity Sports image">&lt;</button>
+                    <button type="button" class="rotation-control rotation-next" aria-label="Show next Velocity Sports image">&gt;</button>
+                </div>
                 <h3>Velocity Sports</h3>
                 <p class="price">$89,999</p>
                 <p class="description">High-performance coupe built for speed, precision, and a thrilling drive.</p>
@@ -86,7 +94,7 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Elite Motors. All rights reserved.</p>
+            <p>&copy; 2024 Just Jap Imports. All rights reserved.</p>
             <div class="social-links">
                 <a href="#" aria-label="Facebook" title="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
                 <a href="#" aria-label="Instagram" title="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
@@ -104,6 +112,32 @@
                 navLinks.classList.toggle('open');
             });
         }
+
+        const velocitySports = document.querySelector('.velocity-sports');
+        const rotationImages = velocitySports?.querySelectorAll('.rotation-image');
+        const previousButton = velocitySports?.querySelector('.rotation-prev');
+        const nextButton = velocitySports?.querySelector('.rotation-next');
+        let activeImage = 0;
+
+        const showImage = (nextIndex) => {
+            if (!rotationImages?.length) {
+                return;
+            }
+
+            rotationImages[activeImage].classList.remove('active');
+            activeImage = (nextIndex + rotationImages.length) % rotationImages.length;
+            rotationImages[activeImage].classList.add('active');
+        };
+
+        velocitySports?.addEventListener('click', () => showImage(activeImage + 1));
+        previousButton?.addEventListener('click', (event) => {
+            event.stopPropagation();
+            showImage(activeImage - 1);
+        });
+        nextButton?.addEventListener('click', (event) => {
+            event.stopPropagation();
+            showImage(activeImage + 1);
+        });
     </script>
 </body>
 </html>
