@@ -81,6 +81,9 @@ git push
 
 The site is intended for current versions of Chrome, Edge, Firefox, and Safari, as well as modern mobile browsers.
 
+## Support Recieved
+I have utilised copilot for support with coding and google for support in building site fuctionalities along with other aspects of design and content i.e images housed in images folder both self taken and also found online to showcase on site. 
+
 ## License
 
 Free to use and modify for personal or commercial projects.
