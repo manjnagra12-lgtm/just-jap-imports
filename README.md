@@ -1,98 +1,85 @@
-# Elite Motors - Car Showcase Landing Page
+# Just Jap Imports
 
-A modern, responsive landing page for an automotive showcase website featuring luxury and performance vehicles.
+A responsive static website for showcasing imported Japanese cars, including featured vehicles, a gallery, and a contact page.
 
 ## Features
 
-✨ **Responsive Design**
-- Mobile-first approach
-- Works seamlessly on desktop, tablet, and mobile devices
-- Flexible grid layouts
+- Responsive layout for desktop, tablet, and mobile screens
+- Sticky navigation with mobile menu toggle
+- Hero banner using `images/banner.jpg`
+- Featured vehicle cards with vehicle images and pricing
+- Gallery page with additional vehicle listings
+- Contact page with enquiry form and business details
+- Bootstrap Icons for navigation and social media links
+- Smooth scrolling and hover transitions
+- Accessible labels and tooltips for social media icons
 
-🎨 **Modern Styling**
-- Gradient backgrounds and smooth transitions
-- Hover effects and animations
-- Professional color scheme (purple, red, and dark tones)
+## Pages
 
-🚗 **Car Showcase**
-- Featured vehicle cards with pricing
-- Smooth scroll navigation
-- Interactive "Learn More" buttons
-
-📞 **Contact Section**
-- Functional contact form
-- Business information display
-- Email and phone details
-
-🧭 **Navigation**
-- Sticky navigation bar
-- Smooth scrolling between sections
-- Active link highlighting
+- `index.html` - Home page with hero banner, featured vehicles, and About section
+- `gallery.html` - Full vehicle gallery
+- `contact.html` - Contact form and contact information
 
 ## Project Structure
 
+```text
+just-jap-imports/
+|-- index.html
+|-- gallery.html
+|-- contact.html
+|-- styles.css
+|-- images/
+|   |-- banner.jpg
+|   |-- celicagt.jpg
+|   `-- 2022supra.webp
+`-- README.md
 ```
-car-showcase/
-├── index.html      # Main HTML file
-├── styles.css      # All styling and responsive design
-├── script.js       # Interactive functionality
-└── README.md       # This file
+
+## Vehicle Images
+
+The default featured vehicle image is `images/celicagt.jpg`. The SUV card uses `images/2022supra.webp` through the targeted `.car-image.suv::before` rule in `styles.css`.
+
+To add or change a vehicle image, update the relevant CSS selector and image path. Keep the image path relative to `styles.css`.
+
+## Styling
+
+All styling is contained in `styles.css`. The current visual system includes:
+
+- Purple primary color: `#667eea`
+- Purple gradient color: `#764ba2`
+- White navigation text with purple hover state
+- Dark navigation and footer backgrounds
+- Responsive breakpoints at `768px` and `480px`
+
+Bootstrap 5 and Bootstrap Icons are loaded from jsDelivr CDN links in the HTML files, so an internet connection is needed for those external resources when opening the pages locally.
+
+## Run Locally
+
+1. Open the project folder in VS Code.
+2. Open `index.html` in a browser, or use the Live Server extension.
+3. Use the navigation links to visit the gallery and contact pages.
+
+The contact form currently uses a `mailto:` action and requires a configured email client to send messages.
+
+## GitHub
+
+This project is tracked on the `main` branch and uses the following remote repository:
+
+```text
+https://github.com/manjnagra12-lgtm/just-jap-imports.git
 ```
 
-## Sections
+To commit and publish later changes:
 
-1. **Navigation** - Sticky header with navigation links
-2. **Hero** - Eye-catching banner with call-to-action
-3. **Featured Vehicles** - Grid display of 3 showcase cars
-4. **About** - Company information and features
-5. **Contact** - Contact form and business info
-6. **Footer** - Copyright and social links
-
-## How to Use
-
-1. Open `index.html` in your web browser
-2. Navigate through sections using the navigation menu or scroll
-3. Click "Browse Gallery" to jump to the car showcase
-4. Click "Learn More" on any car card for details
-5. Use the contact form to send inquiries
-
-## Customization
-
-### Change Colors
-Edit the CSS variables in `styles.css`:
-- Primary color: `#667eea` (purple)
-- Accent color: `#e74c3c` (red)
-- Background: `#f8f9fa` (light gray)
-- Text: `#1a1a1a` (dark)
-
-### Add More Cars
-Duplicate a `.car-card` div in the `cars-grid` section and update:
-- Car name in `<h3>`
-- Price in `.price`
-- Description in `.description`
-- Icon in `.car-image` (change emoji)
-
-### Update Company Info
-Search for "Elite Motors" and replace with your company name throughout the files.
+```bash
+git add .
+git commit -m "Describe your changes"
+git push
+```
 
 ## Browser Support
 
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
-
-## Features to Enhance
-
-Consider adding:
-- High-resolution car images instead of emojis
-- Car detail pages
-- Inventory management system
-- Test drive booking
-- Video background in hero section
-- Customer testimonials
-- Newsletter signup
+The site is intended for current versions of Chrome, Edge, Firefox, and Safari, as well as modern mobile browsers.
 
 ## License
 
