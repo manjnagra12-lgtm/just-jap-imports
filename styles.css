@@ -225,6 +225,14 @@ html {
     display: none;
 }
 
+.sedan-gallery::before {
+    display: none;
+}
+
+.suv-gallery::before {
+    display: none;
+}
+
 .velocity-sports {
     cursor: pointer;
 }
@@ -366,7 +374,7 @@ html {
     padding: 0 1.5rem;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #667eea;
+    color: #e74c3c;
 }
 
 .car-card .description {
