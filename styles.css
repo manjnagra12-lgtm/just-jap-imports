@@ -96,8 +96,8 @@ html {
 }
 
 /* ============================================
-   Hero Section
-   ============================================ */
+    Home Page: Hero Section
+    ============================================ */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("images/banner.jpg");
     background-position: center;
@@ -145,8 +145,8 @@ html {
 }
 
 /* ============================================
-   Featured Cars Section
-   ============================================ */
+    Shared: Vehicle Cards and Gallery Controls
+    ============================================ */
 .cars {
     padding: 80px 0;
     background-color: #fff;
@@ -374,7 +374,7 @@ html {
     padding: 0 1.5rem;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #e74c3c;
+    color: #667eea;
 }
 
 .car-card .description {
@@ -405,8 +405,8 @@ html {
 }
 
 /* ============================================
-   About Section
-   ============================================ */
+    Home Page: About Section
+    ============================================ */
 .about {
     padding: 80px 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -449,8 +449,8 @@ html {
 }
 
 /* ============================================
-   Contact Section
-   ============================================ */
+    Contact Page: Form and Contact Information
+    ============================================ */
 .contact {
     padding: 80px 0;
     background-color: #fff;
@@ -522,8 +522,8 @@ html {
 }
 
 /* ============================================
-   Footer
-   ============================================ */
+    Shared: Footer
+    ============================================ */
 .footer {
     background-color: #1a1a1a;
     color: #ecf0f1;
@@ -556,8 +556,8 @@ html {
 }
 
 /* ============================================
-   Animations
-   ============================================ */
+    Shared: Animations and Button Layout
+    ============================================ */
 @keyframes slideDown {
     from {
         opacity: 0;
@@ -594,6 +594,9 @@ html {
     text-align: center;
 }
 
+/* ============================================
+    Home Page: Contact Call to Action
+    ============================================ */
 .contact-cta {
     padding: 80px 0;
     text-align: center;
@@ -618,21 +621,29 @@ html {
 }
 
 .secondary-button {
-    background-color: #667eea;
+   background-color: #667eea;
     color: white;
-    padding: 15px 35px;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
     border-radius: 50px;
-    font-weight: 600;
+    cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    animation: slideUp 0.8s ease 0.4s both;
 }
 
 .secondary-button:hover {
-    background-color: #5568d3;
+     background-color: #667eea;
     transform: translateY(-3px);
+    box-shadow: 0 6px 20px #667eea;
 }
 
+/* ============================================
+    Gallery and Contact Pages: Page Header
+    ============================================ */
 .page-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("images/banner.jpg");
     color: white;
     padding: 100px 20px 80px;
     text-align: center;
@@ -648,6 +659,9 @@ html {
     opacity: 0.95;
 }
 
+/* ============================================
+    Gallery Page: Vehicle Grid
+    ============================================ */
 .gallery-page {
     padding: 80px 0;
     background-color: #fff;
@@ -670,6 +684,9 @@ html {
     height: 220px;
 }
 
+/* ============================================
+    Contact Page: Contact Layout
+    ============================================ */
 .contact-page {
     padding: 80px 0;
     background-color: #fff;
@@ -709,6 +726,9 @@ html {
     line-height: 1.8;
 }
 
+/* ============================================
+    Shared: Responsive Layout
+    ============================================ */
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: row;

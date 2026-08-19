@@ -36,10 +36,10 @@
     <main class="contact-page">
         <div class="container contact-content">
             <form class="contact-form" action="mailto:sales@justjapimports.com" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="name" placeholder="Your Name" minlength="2" required>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <textarea name="message" placeholder="Your Message" rows="5" minlength="10" required></textarea>
+                <button type="submit" class="submit-btn" onclick="return confirm('Your message has been sent, we will get back to you soon!');">Send Message</button>
             </form>
 
             <div class="contact-info">
