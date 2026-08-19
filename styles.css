@@ -74,6 +74,10 @@ html {
     cursor: pointer;
 }
 
+.nav-toggle-input {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -238,6 +242,7 @@ html {
     font-size: 1.5rem;
     line-height: 1;
     cursor: pointer;
+    display: none;
     transform: translateY(-50%);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -255,6 +260,86 @@ html {
 
 .rotation-next {
     right: 12px;
+}
+
+.gallery-radio {
+    display: none;
+}
+
+.gallery-radio:checked ~ .rotation-image {
+    opacity: 0;
+}
+
+.gallery-radio:checked ~ .rotation-image.image-1,
+.gallery-radio:checked ~ .rotation-image.image-2,
+.gallery-radio:checked ~ .rotation-image.image-3,
+.gallery-radio:checked ~ .rotation-image.image-4,
+.gallery-radio:checked ~ .rotation-image.image-5,
+.gallery-radio:checked ~ .rotation-image.image-6 {
+    opacity: 0;
+}
+
+#velocity-1:checked ~ .image-1,
+#velocity-2:checked ~ .image-2,
+#velocity-3:checked ~ .image-3,
+#velocity-4:checked ~ .image-4,
+#velocity-5:checked ~ .image-5,
+#sedan-1:checked ~ .image-1,
+#sedan-2:checked ~ .image-2,
+#sedan-3:checked ~ .image-3,
+#sedan-4:checked ~ .image-4,
+#sedan-5:checked ~ .image-5,
+#sedan-6:checked ~ .image-6 {
+    opacity: 1;
+}
+
+#suv-1:checked ~ .image-1,
+#suv-2:checked ~ .image-2,
+#suv-3:checked ~ .image-3,
+#suv-4:checked ~ .image-4,
+#suv-5:checked ~ .image-5,
+#suv-6:checked ~ .image-6 {
+    opacity: 1;
+}
+
+#velocity-1:checked ~ .next-1,
+#velocity-2:checked ~ .next-2,
+#velocity-3:checked ~ .next-3,
+#velocity-4:checked ~ .next-4,
+#velocity-5:checked ~ .next-5,
+#velocity-1:checked ~ .prev-1,
+#velocity-2:checked ~ .prev-2,
+#velocity-3:checked ~ .prev-3,
+#velocity-4:checked ~ .prev-4,
+#velocity-5:checked ~ .prev-5,
+#sedan-1:checked ~ .next-1,
+#sedan-2:checked ~ .next-2,
+#sedan-3:checked ~ .next-3,
+#sedan-4:checked ~ .next-4,
+#sedan-5:checked ~ .next-5,
+#sedan-6:checked ~ .next-6,
+#sedan-1:checked ~ .prev-1,
+#sedan-2:checked ~ .prev-2,
+#sedan-3:checked ~ .prev-3,
+#sedan-4:checked ~ .prev-4,
+#sedan-5:checked ~ .prev-5,
+#sedan-6:checked ~ .prev-6 {
+    display: block;
+}
+
+#suv-1:checked ~ .next-1,
+#suv-2:checked ~ .next-2,
+#suv-3:checked ~ .next-3,
+#suv-4:checked ~ .next-4,
+#suv-5:checked ~ .next-5,
+#suv-6:checked ~ .next-6,
+#suv-1:checked ~ .prev-1,
+#suv-2:checked ~ .prev-2,
+#suv-3:checked ~ .prev-3,
+#suv-4:checked ~ .prev-4,
+#suv-5:checked ~ .prev-5,
+#suv-6:checked ~ .prev-6 {
+    display: block;
 }
 
 .rotation-image {
@@ -281,7 +366,7 @@ html {
     padding: 0 1.5rem;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #e74c3c;
+    color: #667eea;
 }
 
 .car-card .description {
@@ -638,7 +723,7 @@ html {
         text-align: center;
     }
 
-    .nav-links.open {
+    .nav-toggle-input:checked ~ .nav-links {
         display: flex;
     }
 

@@ -12,9 +12,10 @@
         <div class="container nav-wrap">
             <div class="logo"><i class="bi bi-car-front-fill"></i> Just Jap Imports</div>
 
-            <button class="nav-toggle" type="button" aria-label="Toggle navigation">
+            <input class="nav-toggle-input" type="checkbox" id="nav-toggle-gallery">
+            <label class="nav-toggle" for="nav-toggle-gallery" aria-label="Toggle navigation">
                 <i class="bi bi-list"></i>
-            </button>
+            </label>
 
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -36,33 +37,97 @@
         <div class="container gallery-grid">
             <div class="gallery-card car-card">
                 <div class="car-image sports velocity-sports" aria-label="Velocity Sports image gallery">
-                    <img src="images/celicagtb.jpg" alt="Toyota Celica GT" class="rotation-image active">
-                    <img src="images/celicagtb2.jpg" alt="Toyota Celica GT" class="rotation-image">
-                    <img src="images/celicagtb3.jpg" alt="Toyota Celica GT" class="rotation-image">
-                    <img src="images/celicagtb4.jpg" alt="Toyota Celica GT" class="rotation-image">
-                    <img src="images/celicagtb5.jpg" alt="Toyota Celica GT" class="rotation-image">
-                    <button type="button" class="rotation-control rotation-prev" aria-label="Show previous Velocity Sports image">&lt;</button>
-                    <button type="button" class="rotation-control rotation-next" aria-label="Show next Velocity Sports image">&gt;</button>
+                    <input class="gallery-radio" type="radio" name="velocity-gallery" id="velocity-1" checked>
+                    <input class="gallery-radio" type="radio" name="velocity-gallery" id="velocity-2">
+                    <input class="gallery-radio" type="radio" name="velocity-gallery" id="velocity-3">
+                    <input class="gallery-radio" type="radio" name="velocity-gallery" id="velocity-4">
+                    <input class="gallery-radio" type="radio" name="velocity-gallery" id="velocity-5">
+                    <img src="images/celicagtb.jpg" alt="Toyota Celica GT" class="rotation-image image-1">
+                    <img src="images/celicagtb2.jpg" alt="Toyota Celica GT" class="rotation-image image-2">
+                    <img src="images/celicagtb3.jpg" alt="Toyota Celica GT" class="rotation-image image-3">
+                    <img src="images/celicagtb4.jpg" alt="Toyota Celica GT" class="rotation-image image-4">
+                    <img src="images/celicagtb5.jpg" alt="Toyota Celica GT" class="rotation-image image-5">
+                    <label for="velocity-5" class="rotation-control rotation-prev prev-1" aria-label="Show previous Velocity Sports image">&lt;</label>
+                    <label for="velocity-1" class="rotation-control rotation-prev prev-2" aria-label="Show previous Velocity Sports image">&lt;</label>
+                    <label for="velocity-2" class="rotation-control rotation-prev prev-3" aria-label="Show previous Velocity Sports image">&lt;</label>
+                    <label for="velocity-3" class="rotation-control rotation-prev prev-4" aria-label="Show previous Velocity Sports image">&lt;</label>
+                    <label for="velocity-4" class="rotation-control rotation-prev prev-5" aria-label="Show previous Velocity Sports image">&lt;</label>
+                    <label for="velocity-2" class="rotation-control rotation-next next-1" aria-label="Show next Velocity Sports image">&gt;</label>
+                    <label for="velocity-3" class="rotation-control rotation-next next-2" aria-label="Show next Velocity Sports image">&gt;</label>
+                    <label for="velocity-4" class="rotation-control rotation-next next-3" aria-label="Show next Velocity Sports image">&gt;</label>
+                    <label for="velocity-5" class="rotation-control rotation-next next-4" aria-label="Show next Velocity Sports image">&gt;</label>
+                    <label for="velocity-1" class="rotation-control rotation-next next-5" aria-label="Show next Velocity Sports image">&gt;</label>
                 </div>
-                <h3>Velocity Sports</h3>
-                <p class="price">$89,999</p>
+                <h3>Toyota Celica GT</h3>
+                <p class="price">£89,999</p>
                 <p class="description">High-performance coupe built for speed, precision, and a thrilling drive.</p>
-                <a href="contact.html" class="learn-btn">Learn More</a>
+                <a href="contact.html" class="learn-btn">Get in touch</a>
             </div>
 
             <div class="gallery-card car-card">
-                <div class="car-image sedan"></div>
-                <h3>Elegance Sedan</h3>
-                <p class="price">$54,999</p>
-                <p class="description">Premium comfort and luxury styling designed for everyday elegance.</p>
-                <a href="contact.html" class="learn-btn">Learn More</a>
+                <div class="car-image sedan sedan-gallery" aria-label="Toyota Celica GTS image gallery">
+                    <input class="gallery-radio" type="radio" name="sedan-gallery" id="sedan-1" checked>
+                    <input class="gallery-radio" type="radio" name="sedan-gallery" id="sedan-2">
+                    <input class="gallery-radio" type="radio" name="sedan-gallery" id="sedan-3">
+                    <input class="gallery-radio" type="radio" name="sedan-gallery" id="sedan-4">
+                    <input class="gallery-radio" type="radio" name="sedan-gallery" id="sedan-5">
+                    <input class="gallery-radio" type="radio" name="sedan-gallery" id="sedan-6">
+                    <img src="images/celicagts.jpg" alt="Toyota Celica GTS" class="rotation-image image-1">
+                    <img src="images/celicagts2.jpg" alt="Toyota Celica GTS" class="rotation-image image-2">
+                    <img src="images/celicagts3.jpg" alt="Toyota Celica GTS" class="rotation-image image-3">
+                    <img src="images/celicagts4.jpg" alt="Toyota Celica GTS" class="rotation-image image-4">
+                    <img src="images/celicagts5.jpg" alt="Toyota Celica GTS" class="rotation-image image-5">
+                    <img src="images/celicagts6.jpg" alt="Toyota Celica GTS" class="rotation-image image-6">
+                    <label for="sedan-6" class="rotation-control rotation-prev prev-1" aria-label="Show previous sedan image">&lt;</label>
+                    <label for="sedan-1" class="rotation-control rotation-prev prev-2" aria-label="Show previous sedan image">&lt;</label>
+                    <label for="sedan-2" class="rotation-control rotation-prev prev-3" aria-label="Show previous sedan image">&lt;</label>
+                    <label for="sedan-3" class="rotation-control rotation-prev prev-4" aria-label="Show previous sedan image">&lt;</label>
+                    <label for="sedan-4" class="rotation-control rotation-prev prev-5" aria-label="Show previous sedan image">&lt;</label>
+                    <label for="sedan-5" class="rotation-control rotation-prev prev-6" aria-label="Show previous sedan image">&lt;</label>
+                    <label for="sedan-2" class="rotation-control rotation-next next-1" aria-label="Show next sedan image">&gt;</label>
+                    <label for="sedan-3" class="rotation-control rotation-next next-2" aria-label="Show next sedan image">&gt;</label>
+                    <label for="sedan-4" class="rotation-control rotation-next next-3" aria-label="Show next sedan image">&gt;</label>
+                    <label for="sedan-5" class="rotation-control rotation-next next-4" aria-label="Show next sedan image">&gt;</label>
+                    <label for="sedan-6" class="rotation-control rotation-next next-5" aria-label="Show next sedan image">&gt;</label>
+                    <label for="sedan-1" class="rotation-control rotation-next next-6" aria-label="Show next sedan image">&gt;</label>
+                </div>
+
+                <h3>Toyota Celica GTS</h3>
+                <p class="price">£34,999</p>
+                <p class="description">Sports styling designed for sports cars enthusiasts.</p>
+                <a href="contact.html" class="learn-btn">Get in touch</a>
             </div>
 
             <div class="gallery-card car-card">
-                <div class="car-image suv"></div>
-                <h3>Adventure SUV</h3>
+                <div class="car-image suv suv-gallery" aria-label="Toyota Crown image gallery">
+                    <input class="gallery-radio" type="radio" name="suv-gallery" id="suv-1" checked>
+                    <input class="gallery-radio" type="radio" name="suv-gallery" id="suv-2">
+                    <input class="gallery-radio" type="radio" name="suv-gallery" id="suv-3">
+                    <input class="gallery-radio" type="radio" name="suv-gallery" id="suv-4">
+                    <input class="gallery-radio" type="radio" name="suv-gallery" id="suv-5">
+                    <input class="gallery-radio" type="radio" name="suv-gallery" id="suv-6">
+                    <img src="images/crown.jpg" alt="Toyota Crown" class="rotation-image image-1">
+                    <img src="images/crown2.jpg" alt="Toyota Crown" class="rotation-image image-2">
+                    <img src="images/crown3.jpg" alt="Toyota Crown" class="rotation-image image-3">
+                    <img src="images/crown4.jpg" alt="Toyota Crown" class="rotation-image image-4">
+                    <img src="images/crown5.jpg" alt="Toyota Crown" class="rotation-image image-5">
+                    <img src="images/crown6.jpg" alt="Toyota Crown" class="rotation-image image-6">
+                    <label for="suv-6" class="rotation-control rotation-prev prev-1" aria-label="Show previous SUV image">&lt;</label>
+                    <label for="suv-1" class="rotation-control rotation-prev prev-2" aria-label="Show previous SUV image">&lt;</label>
+                    <label for="suv-2" class="rotation-control rotation-prev prev-3" aria-label="Show previous SUV image">&lt;</label>
+                    <label for="suv-3" class="rotation-control rotation-prev prev-4" aria-label="Show previous SUV image">&lt;</label>
+                    <label for="suv-4" class="rotation-control rotation-prev prev-5" aria-label="Show previous SUV image">&lt;</label>
+                    <label for="suv-5" class="rotation-control rotation-prev prev-6" aria-label="Show previous SUV image">&lt;</label>
+                    <label for="suv-2" class="rotation-control rotation-next next-1" aria-label="Show next SUV image">&gt;</label>
+                    <label for="suv-3" class="rotation-control rotation-next next-2" aria-label="Show next SUV image">&gt;</label>
+                    <label for="suv-4" class="rotation-control rotation-next next-3" aria-label="Show next SUV image">&gt;</label>
+                    <label for="suv-5" class="rotation-control rotation-next next-4" aria-label="Show next SUV image">&gt;</label>
+                    <label for="suv-6" class="rotation-control rotation-next next-5" aria-label="Show next SUV image">&gt;</label>
+                    <label for="suv-1" class="rotation-control rotation-next next-6" aria-label="Show next SUV image">&gt;</label>
+                </div>
+                <h3>Toyota Crown</h3>
                 <p class="price">$72,999</p>
-                <p class="description">A powerful SUV with advanced safety features and all-terrain confidence.</p>
+                <p class="description">Premium Japanese performance and comfort with confident road presence.</p>
                 <a href="contact.html" class="learn-btn">Learn More</a>
             </div>
 
@@ -103,41 +168,5 @@
         </div>
     </footer>
 
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        if (navToggle && navLinks) {
-            navToggle.addEventListener('click', () => {
-                navLinks.classList.toggle('open');
-            });
-        }
-
-        const velocitySports = document.querySelector('.velocity-sports');
-        const rotationImages = velocitySports?.querySelectorAll('.rotation-image');
-        const previousButton = velocitySports?.querySelector('.rotation-prev');
-        const nextButton = velocitySports?.querySelector('.rotation-next');
-        let activeImage = 0;
-
-        const showImage = (nextIndex) => {
-            if (!rotationImages?.length) {
-                return;
-            }
-
-            rotationImages[activeImage].classList.remove('active');
-            activeImage = (nextIndex + rotationImages.length) % rotationImages.length;
-            rotationImages[activeImage].classList.add('active');
-        };
-
-        velocitySports?.addEventListener('click', () => showImage(activeImage + 1));
-        previousButton?.addEventListener('click', (event) => {
-            event.stopPropagation();
-            showImage(activeImage - 1);
-        });
-        nextButton?.addEventListener('click', (event) => {
-            event.stopPropagation();
-            showImage(activeImage + 1);
-        });
-    </script>
 </body>
 </html>
