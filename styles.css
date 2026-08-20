@@ -92,11 +92,13 @@ html {
 }
 
 /* Home Page: Hero Section */
-.hero {
+.hero,
+.page-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("images/banner.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
     color: white;
     padding: 150px 20px;
     text-align: center;
@@ -623,8 +625,6 @@ html {
 
 /* Gallery and Contact Pages: Page Header */
 .page-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("images/banner.jpg");
-    color: white;
     padding: 100px 20px 80px;
     text-align: center;
 }
