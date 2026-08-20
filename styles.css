@@ -1,6 +1,4 @@
-/* ============================================
-   Global Styles & Reset
-   ============================================ */
+/*    Global Styles & Reset  */
 * {
     margin: 0;
     padding: 0;
@@ -24,9 +22,7 @@ html {
     padding: 0 20px;
 }
 
-/* ============================================
-   Navigation Bar
-   ============================================ */
+/*    Navigation Bar */
 .navbar {
     background-color: #1a1a1a;
     padding: 1rem 0;
@@ -95,9 +91,7 @@ html {
     color: #667eea;
 }
 
-/* ============================================
-    Home Page: Hero Section
-    ============================================ */
+/* Home Page: Hero Section */
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("images/banner.jpg");
     background-position: center;
@@ -144,9 +138,7 @@ html {
     box-shadow: 0 6px 20px #667eea;
 }
 
-/* ============================================
-    Shared: Vehicle Cards and Gallery Controls
-    ============================================ */
+/*  Shared: Vehicle Cards and Gallery Controls */
 .cars {
     padding: 80px 0;
     background-color: #fff;
@@ -404,9 +396,7 @@ html {
     transform: scale(1.05);
 }
 
-/* ============================================
-    Home Page: About Section
-    ============================================ */
+/*  Home Page: About Section */
 .about {
     padding: 80px 0;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -448,9 +438,7 @@ html {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ============================================
-    Contact Page: Form and Contact Information
-    ============================================ */
+/*  Contact Page: Form and Contact Information */
 .contact {
     padding: 80px 0;
     background-color: #fff;
@@ -521,9 +509,7 @@ html {
     font-size: 1rem;
 }
 
-/* ============================================
-    Shared: Footer
-    ============================================ */
+/*  Shared: Footer */
 .footer {
     background-color: #1a1a1a;
     color: #ecf0f1;
@@ -555,9 +541,7 @@ html {
     color: #764ba2;
 }
 
-/* ============================================
-    Shared: Animations and Button Layout
-    ============================================ */
+/* Shared: Animations and Button Layout */
 @keyframes slideDown {
     from {
         opacity: 0;
@@ -594,9 +578,7 @@ html {
     text-align: center;
 }
 
-/* ============================================
-    Home Page: Contact Call to Action
-    ============================================ */
+/* Home Page: Contact Call to Action */
 .contact-cta {
     padding: 80px 0;
     text-align: center;
@@ -639,9 +621,7 @@ html {
     box-shadow: 0 6px 20px #667eea;
 }
 
-/* ============================================
-    Gallery and Contact Pages: Page Header
-    ============================================ */
+/* Gallery and Contact Pages: Page Header */
 .page-header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url("images/banner.jpg");
     color: white;
@@ -659,9 +639,7 @@ html {
     opacity: 0.95;
 }
 
-/* ============================================
-    Gallery Page: Vehicle Grid
-    ============================================ */
+/* Gallery Page: Vehicle Grid */
 .gallery-page {
     padding: 80px 0;
     background-color: #fff;
@@ -684,9 +662,7 @@ html {
     height: 220px;
 }
 
-/* ============================================
-    Contact Page: Contact Layout
-    ============================================ */
+/* Contact Page: Contact Layout */
 .contact-page {
     padding: 80px 0;
     background-color: #fff;
@@ -726,9 +702,7 @@ html {
     line-height: 1.8;
 }
 
-/* ============================================
-    Shared: Responsive Layout
-    ============================================ */
+/* Responsive Layout */
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: row;
